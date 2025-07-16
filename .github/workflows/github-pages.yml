@@ -18,9 +18,6 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install Angular CDK
-        run: npm install @angular/cdk --save
-
       - name: Install dependencies
         run: |
           rm -rf package-lock.json node_modules
