@@ -14,16 +14,16 @@ app-wine-table {
   top: 0;
   left: 0;
   width: 100%;
-  background: #1a0820; /* Fondo más oscuro */
+  background: #1a0820; /* Fondo m?s oscuro */
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.12);
-  padding: 32px 0 18px 0; /* Más alto el header */
+  padding: 32px 0 18px 0; /* M?s alto el header */
   text-align: center;
 }
 
 .page-title {
   font-family: 'Playfair Display', 'Georgia', serif;
-  font-size: 2rem; /* Más pequeño */
+  font-size: 2rem; /* M?s peque?o */
   color: #f8e9ff; /* Texto claro */
   margin: 0;
   letter-spacing: 1.5px;
@@ -31,7 +31,7 @@ app-wine-table {
 
 .subtitle {
   text-align: center;
-  font-size: 1.5rem; /* Un poco más grande */
+n  font-size: 1.5rem; /* Un poco m?s grande */
   color: #6d184e;
   margin-bottom: 1.5rem;
   margin-top: 0.5rem;
@@ -39,8 +39,8 @@ app-wine-table {
 }
 
 .main-content {
-  margin-top: 110px; /* Ajuste para header más alto */
-  margin-bottom: 50px; /* Más espacio inferior para que no se vea cortada la tabla */
+  margin-top: 110px; /* Ajuste para header m?s alto */
+  margin-bottom: 50px; /* M?s espacio inferior para que no se vea cortada la tabla */
   padding-bottom: 40px; /* Espacio extra bajo la tabla */
 }
 
@@ -55,4 +55,20 @@ app-wine-table {
   padding: 10px 0;
   font-size: 14px;
   z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  .sticky-header {
+    padding: 18px 0 10px 0;
+  }
+  .page-title {
+    font-size: 1.2rem;
+  }
+  .main-content {
+    margin-top: 70px;
+  }
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 }
