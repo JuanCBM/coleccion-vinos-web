@@ -2,6 +2,7 @@
 node_modules/
 dist/
 .tmp/
+.angular/cache/
 
 # Compiled output
 out-tsc/
@@ -39,4 +40,3 @@ coverage/
 
 # Optional stylelint cache
 .stylelintcache
-
