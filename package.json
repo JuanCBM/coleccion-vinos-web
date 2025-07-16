@@ -5,10 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:gh-pages": "ng build --configuration production --base-href=/coleccion-vinos-web/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:coleccion-vinos-web": "node dist/coleccion-vinos-web/server/server.mjs"
+    "serve:ssr:coleccion-vinos-web": "node dist/coleccion-vinos-web/server/server.mjs",
+    "build:gh-pages": "ng build --configuration production --base-href=/coleccion-vinos-web/",
+    "postbuild:gh-pages": "node -e \"require('fs').writeFileSync('dist/coleccion-vinos-web/browser/.nojekyll', '')\"",
+    "deploy:gh-pages": "npx angular-cli-ghpages --dir=dist/coleccion-vinos-web/browser --no-silent"
   },
   "private": true,
   "dependencies": {
