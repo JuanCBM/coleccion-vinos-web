@@ -13,9 +13,9 @@ export class WineService {
 
   getWines(): Observable<Wine[]> {
     return this.http.get(this.csvUrl, { responseType: 'text' })
-      .pipe(
-        map(data => this.parseCSV(data))
-      );
+    .pipe(
+      map(data => this.parseCSV(data))
+    );
   }
 
   parseCSV(data: string): Wine[] {

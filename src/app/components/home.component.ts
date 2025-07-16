@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
+import {WineTableComponent} from './wine-table/wine-table.component';
 
 @Component({
   selector: 'app-home',
-  template: `
-    <h1>Bienvenido a la Colección de Vinos</h1>
-    <!-- Aquí puedes incluir componentes hijos, por ejemplo: -->
-    <app-wine-table></app-wine-table>
-  `,
+  templateUrl: './home.component.html',
+  imports: [
+    WineTableComponent
+  ],
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {}
-

@@ -1,0 +1,20 @@
+<div class="sticky-header">
+  <h1 class="page-title">Colección exclusiva de vinos</h1>
+</div>
+
+<div class="main-content">
+  <app-wine-table></app-wine-table>
+</div>
+
+<footer class="sticky-footer">
+  <span>© 2025 Colección Privada de Vinos. Todos los derechos reservados.</span>
+</footer>
+
+<script>
+  // Recupera la ruta almacenada y navega
+  const redirectPath = sessionStorage.getItem('redirect');
+  if (redirectPath) {
+    sessionStorage.removeItem('redirect');
+    window.history.replaceState(null, '', redirectPath);
+  }
+</script>

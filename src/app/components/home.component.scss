@@ -1,6 +1,49 @@
-h1 {
-  text-align: center;
-  margin-top: 2rem;
-  color: #6d184e;
+body, html {
+  background: linear-gradient(120deg, #f8f6fc 0%, #f3e9f7 100%) !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
+app-wine-table {
+  flex: 1 0 auto;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1a0820; /* Fondo más oscuro */
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+  padding: 32px 0 18px 0; /* Más alto el header */
+  text-align: center;
+}
+
+.page-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 2rem; /* Más pequeño */
+  color: #f8e9ff; /* Texto claro */
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+.main-content {
+  margin-top: 110px; /* Ajuste para header más alto */
+  margin-bottom: 50px; /* Más espacio inferior para que no se vea cortada la tabla */
+  padding-bottom: 40px; /* Espacio extra bajo la tabla */
+}
+
+.sticky-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  z-index: 1000;
+}
