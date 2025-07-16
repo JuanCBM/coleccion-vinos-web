@@ -29,6 +29,15 @@ app-wine-table {
   letter-spacing: 1.5px;
 }
 
+.subtitle {
+  text-align: center;
+  font-size: 1.5rem; /* Un poco más grande */
+  color: #6d184e;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
 .main-content {
   margin-top: 110px; /* Ajuste para header más alto */
   margin-bottom: 50px; /* Más espacio inferior para que no se vea cortada la tabla */
