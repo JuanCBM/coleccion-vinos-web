@@ -1,0 +1,78 @@
+:host ::ng-deep .mat-mdc-dialog-container .mat-mdc-dialog-title,
+:host ::ng-deep .image-slider-header h2[mat-dialog-title] {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+}
+
+:host ::ng-deep .image-slider-content {
+  font-size: 1.5rem;
+}
+
+:host ::ng-deep .image-counter {
+  font-size: 1.7rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.image-slider-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 800px;
+  max-height: 90vh;
+}
+
+.image-slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.image-slider-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.wine-image {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.navigation-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.image-counter {
+  margin: 0 16px;
+  font-size: 1.7rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-button {
+  color: #673ab7;
+}
+
+.close-button {
+  color: rgba(0, 0, 0, 0.54);
+}
