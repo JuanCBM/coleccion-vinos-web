@@ -63,7 +63,7 @@ export class WineTableComponent implements OnInit, AfterViewInit {
       this.dialog.open(ImageSliderComponent, {
         width: '800px',
         data: {
-          wineName: wine.name,
+          wineName: wine.name + ' ('+wine.year+')',
           images: wine.images
         } as ImageSliderData
       });
