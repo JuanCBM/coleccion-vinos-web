@@ -27,7 +27,7 @@ export class WineService {
         name,
         year: Number(year),
         bottles: Number(bottles),
-        images: images.split(',').map(img => img.trim().replace(/^"|"$/g, ''))
+        images: images.split(',').map(img => 'assets/images/'+img.trim().replace(/^"|"$/g, '')+'.jpg')
       });
     }
     return result;
