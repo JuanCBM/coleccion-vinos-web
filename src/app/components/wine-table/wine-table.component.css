@@ -1,12 +1,12 @@
 /* Estilo profesional para la tabla de vinos */
 .wine-table-container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 900px;
   margin: 40px auto 0 auto;
   background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 6px 32px rgba(44, 44, 84, 0.10), 0 1.5px 6px rgba(44,44,84,0.06);
-  padding: 32px 32px 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 24px 16px 32px 16px;
   font-size: 1.13rem;
 }
 
@@ -15,21 +15,21 @@
   border-collapse: separate;
   border-spacing: 0;
   background: #fff;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
   font-size: 1.12rem;
 }
 
 .wine-table th, .wine-table td {
-  padding: 18px 14px;
-  font-size: 1.18rem;
+  padding: 12px 8px;
+  font-size: 1rem;
   border-bottom: 1.5px solid #e0e0e0;
 }
 
 .wine-table th {
-  background: #f3f3f7;
-  color: #2d2d3a;
+  background: #22223b;
+  color: #f8f8f8;
   font-weight: 700;
   letter-spacing: 0.7px;
   border-bottom: 2.5px solid #bdbdbd;
@@ -57,11 +57,11 @@
 }
 
 .wine-thumbnail {
-  width: 56px;
-  height: 56px;
+  max-width: 60px;
+  max-height: 60px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(44,44,84,0.10);
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
   border: 1.5px solid #e0e0e0;
 }
 
@@ -85,6 +85,63 @@
   margin-bottom: 32px;
   font-weight: 400;
   letter-spacing: 0.5px;
+}
+
+.paginator-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  background: #f5f5fa;
+  border-radius: 8px;
+  padding: 12px 0;
+}
+
+.mat-paginator {
+  color: #22223b;
+}
+
+.mat-mdc-paginator-touch-target {
+  border-radius: 6px !important;
+  background: #f5f5fa !important;
+  margin: 0 4px !important;
+  padding: 4px 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 48px !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+:host ::ng-deep .mat-mdc-select-value {
+  padding-left: 10px !important;
+}
+
+:host ::ng-deep .mat-mdc-select-arrow-wrapper {
+  padding-right: 5px !important;
+}
+
+/* Traducción completa del paginador de Angular Material */
+.mat-paginator-page-size-label {
+  font-size: 1rem;
+  margin-right: 6px;
+}
+.mat-paginator-page-size-label::after {
+  content: ' elementos por página';
+  font-size: 0.95rem;
+  color: #22223b;
+}
+.mat-paginator-range-label {
+  font-size: 1rem;
+}
+.mat-paginator-navigation-previous .mat-paginator-icon {
+  /* Flecha previa */
+}
+.mat-paginator-navigation-next .mat-paginator-icon {
+  /* Flecha siguiente */
+}
+.mat-paginator-range-actions .mat-mdc-button {
+  /* Botones de navegación */
 }
 
 @media (max-width: 700px) {
